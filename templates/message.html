@@ -1,0 +1,10 @@
+<div class="message" id="m{{ message["id"] }}">
+<script>
+var hc = {{  message["body"] }};
+createChart("{{ message["id"] }}",hc);
+</script>
+<div id="chart{{ message["id"] }}">
+  <svg></svg>
+</div>
+</div>
+
